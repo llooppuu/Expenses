@@ -1,12 +1,13 @@
 import ExpenseItem from "./ExpenseItem.jsx";
 import './expense.css';
+import Card from './Card.jsx';
 
 function Expenses(props) {
     return (
-        <div className="expenses">
+        <Card className="expenses">
             <ExpenseItem data={props.dataMain[0]} />
             <ExpenseItem data={props.dataMain[1]} />
-        </div>
+        </Card>
     );
 }
 
