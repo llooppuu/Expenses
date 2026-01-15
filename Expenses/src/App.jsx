@@ -1,13 +1,8 @@
-import { useState } from 'react'
 import './App.css'
-import ExpenseItem from './components/ExpenseItem'
+import Expenses from './components/Expenses.jsx'
 
 function App() {
-  const data = {
-    date: new Date(2024, 10, 12),
-    title: 'New book',
-    price: 30.99
-  };
+  
 
   const expenses = [
     {
@@ -24,8 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <ExpenseItem {...expenses[0]}/>
-      <ExpenseItem {...expenses[1]}/>
+      <Expenses dataMain={expenses}/>
     </div>
   )
 }
