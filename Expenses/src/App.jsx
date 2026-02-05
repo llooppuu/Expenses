@@ -29,6 +29,12 @@ function App() {
       date : new Date(2025, 1, 2),
       title : 'Phone',
       price : 799.99
+    },
+    {
+      id : 'id4',
+      date : new Date(2024, 1, 2),
+      title : 'food',
+      price : 299.99
     }
   ]
 
