@@ -7,13 +7,23 @@ function App() {
   [
     {
       date : new Date(2026, 0, 10),
-      title : 'New Book So Cool To Read',
+      title : 'New Book',
       price : 25.99
     },
     {
-      date : new Date(2026, 0, 5),
-      title : 'Fortnite V-Bucks',
+      date : new Date(2026, 0, 2),
+      title : 'New jeans',
       price : 99.99
+    },
+    {
+      date : new Date(2025, 6, 22),
+      title : 'ChatGPT subscription',
+      price : 99.99
+    },
+    {
+      date : new Date(2025, 1, 2),
+      title : 'Phone',
+      price : 799.99
     }
   ]
   const addExpenseHanlder = (expense) => {
