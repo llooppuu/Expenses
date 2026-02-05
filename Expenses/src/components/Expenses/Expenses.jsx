@@ -1,14 +1,15 @@
-import ExpenseItem from "./ExpenseItem.jsx";
-import './expense.css';
-import Card from '../UI/Card.jsx';
+import ExpenseItem from './ExpenseItem.jsx'
+import Card from '../UI/card.jsx'
+import './expense.css'
 
-function Expenses(props) {
+function Expenses(props){
     return (
-        <Card className="expenses">
-            <ExpenseItem data={props.dataMain[0]} />
-            <ExpenseItem data={props.dataMain[1]} />
+        <Card className='expenses'>
+            {props.dataMain.map((expense) => (
+            <ExpenseItem key={expense.id} data={expense} />
+            ))}
         </Card>
-    );
+    )
 }
 
-export default Expenses;
+export default Expenses
